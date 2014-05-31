@@ -1,0 +1,14 @@
+<html>
+<body>
+<div>CLICK ME!</div>
+</body>
+</html>
+<script>
+// even handler
+function handle( e) { 
+	console.log( e); // debug event
+}
+// find the DOM of DIV
+var div = document.getElementsByTagName( 'div')[ 0];
+div.addEventListener( 'click', handle, false);
+</script>
