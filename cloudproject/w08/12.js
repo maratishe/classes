@@ -6,7 +6,7 @@ $( 'div').click( function() {
 	// send post request
 	$.post( 'index.php', { key: 'value'}, function( v) { 
 		$( 'body').empty().append( 'OK(' + v + ')');
-	})
+	}, 'text')
 	
 })
 
